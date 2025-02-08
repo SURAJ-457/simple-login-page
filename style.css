@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-image: -webkit-image-set("backimg.png");
+}
+
+.borderLine{
+    position: absolute;
+    top:0;
+    inset:0;
+}
+
+.borderLine::before{
+    content:"";
+    position: absolute;
+    top:-50% ;
+    left:-50%;
+    width:380px;
+    height:420px;
+    background: linear-gradient(0deg, transparent,transparent,#ffffff,#ffffff,#ffffff);
+
+    
+        z-index: 1;
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+        animation-delay: -1.5s;
+}
+
+.borderLine::after{
+    content:"";
+    position: absolute;
+    top:-50% ;
+    left:-50%;
+    width:380px;
+    height:420px;
+    background: linear-gradient(0deg, transparent,transparent,#008000,#008000,#008000);
+        z-index: 1;
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+        animation-delay: -4.5s;
+}
+.box::before{
+    content:"";
+    position: absolute;
+    top:-50% ;
+    left:-50%;
+    width:380px;
+    height:420px;
+    background: linear-gradient(0deg, transparent,transparent,#ffa500,#ffa500,#ffa500);
+        z-index: 1;
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+        
+    }
+
+
+
+borderLine::after{
+    content:"";
+    position: absolute;
+    top:-50% ;
+    left:-50%;
+    width:380px;
+    height:420px;
+    background: linear-gradient(0deg, transparent,transparent,#0000ff,#0000ff,#0000ff);
+        z-index: 1;
+        transform-origin: bottom right;
+        animation: animate 6s linear infinite;
+        animation-delay: 3s;
+}
+
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+.box{
+
+    position:relative;
+    background-color:white;
+    width: 380px;
+    height: 420px;
+    border-radius: 8px;
+overflow: hidden;
+
+}
+
+
+.box form{
+    position: absolute;
+    inset: 4px;
+    background: rgb(33,33,33);
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .box form h2{
+        color:skyblue;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 0.1em;
+           }
+
+
+.box form .inputbox{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+
+}
+
+.box form .inputbox input{
+    position: relative;
+    width: 100px;
+    padding: 20px 10px 10px;
+    border:none;
+    outline: none;
+    box-shadow:none;
+    color:rgb(253, 243, 243);
+    background: transparent;
+    font-size:1em;
+    transition: 0.5s;
+    z-index:10;
+}
+
+
+.box form .inputbox input:valid~span ,
+ .box form .inputbox input:focus~span {
+    color:white;
+    font-size: 0.75em;
+    transform:translateY(-34px);
+}
+
+
+.box form.inputBox i{
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    height:2px ;
+    width:100% ;
+    background: rgb(255,255,255);
+    border-radius: 4px;
+    overflow: hidden;
+    transition:0.5s ;
+    pointer-events: none;
+}
+
+.box form .inputbox input:valid~i,
+.box form .inputbox input:focus~i{
+    height:44px;
+
+}
+
+.box form .inputbox span{
+    position: absolute;
+    left:0;
+    padding:20px 0px 10px;
+    color:rgb(100,100,100);
+    pointer-events: none;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition:0.5s;
+}
+
+
+.box form .links{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.box form.links a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: white;
+    text-decoration: none;
+    }
+
+    .box form .links a:hover,
+    .box form .links a:nth-child(2){
+        color:white;
+    }
+
+
+    .box form input[type="button"]
+    {
+        background:rgb(163,31,31);
+        border: none;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        font-size: 0.9em;
+        font-weight: 700;
+        width:100px ;
+        margin: 30px 30%;
+        padding: 9px 25px;
+
+    }
+
+.box form input[type="button"]:active{
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
